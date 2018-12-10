@@ -336,7 +336,7 @@ function getEntityMarkup(
     return `<img src="${entity.data.src}" alt="${entity.data.alt}" style="float:${entity.data.alignment || 'none'};height: ${entity.data.height};width: ${entity.data.width}"/>`;
   }
   if (entity.type === 'EMBEDDED_LINK') {
-    return `<div class="embedded-wrapper"><iframe width="${entity.data.width}" height="${entity.data.height}" src="${entity.data.src}" frameBorder="0"></iframe></div>`;
+    return `<div class="embedded-wrapper"><iframe width="${entity.data.width}" height="${entity.data.height}" src="${entity.data.src}" frameBorder="0" allowFullScreen></iframe></div>`;
   }
   return text;
 }
